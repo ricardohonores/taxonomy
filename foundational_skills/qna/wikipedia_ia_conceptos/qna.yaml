@@ -1,0 +1,20 @@
+# foundational_skills/qna/wikipedia_ia_conceptos/qna.yaml
+
+# Esta habilidad le indica a InstructLab que genere preguntas y respuestas
+# a partir de un artículo de Wikipedia.
+
+# Define la habilidad principal
+name: inteligencia_artificial_conceptos_wikipedia
+
+# Tipo de habilidad, crucial para que InstructLab sepa cómo procesarla
+type: qna_wikipedia
+
+# URL del artículo de Wikipedia a usar como fuente
+url: https://es.wikipedia.org/wiki/Inteligencia_artificial
+
+# Título del artículo (opcional, pero útil para referencia)
+title: Inteligencia artificial
+
+# Categoría y dificultad (opcional, pero buena práctica)
+category: Ciencia
+difficulty: medium
