@@ -1,0 +1,37 @@
+# knowledge/ia_aplicaciones_educacion/qna.yaml
+
+# Habilidad de conocimiento (Knowledge Contribution) versión 3
+# Esta habilidad es "fundamentada" (grounded) en un documento externo.
+
+version: 3
+created_by: ricardohonores # Reemplaza con tu nombre de usuario de GitHub
+domain: Educacion
+
+seed_examples:
+  - context: |
+      La Inteligencia Artificial (IA) está revolucionando el panorama educativo al ofrecer herramientas y metodologías innovadoras. Su aplicación busca personalizar la experiencia de aprendizaje, automatizar tareas administrativas y proporcionar análisis de datos para mejorar la toma de decisiones pedagógicas.
+
+      La personalización del aprendizaje permite a los sistemas de IA adaptar el contenido y el ritmo de enseñanza a las necesidades individuales de cada estudiante. Esto se logra mediante algoritmos que analizan el rendimiento, el estilo de aprendizaje y las preferencias del alumno, creando rutas de aprendizaje dinámicas.
+
+      La automatización de tareas libera a los educadores de tareas repetitivas como la calificación de exámenes de opción múltiple, la gestión de horarios y la comunicación básica con los padres. Esto permite a los profesores dedicar más tiempo a la interacción directa con los estudiantes y al desarrollo pedagógico.
+
+      La tutoría inteligente con chatbots y asistentes virtuales impulsados por IA puede ofrecer apoyo 24/7 a los estudiantes, respondiendo preguntas, proporcionando explicaciones adicionales y guiándolos a través de conceptos difíciles.
+
+      El análisis de datos educativos con IA permite procesar grandes volúmenes de datos sobre el rendimiento estudiantil, identificando patrones, prediciendo riesgos de abandono escolar y ofreciendo insights para intervenciones tempranas y personalizadas.
+    questions_and_answers:
+      - question: "¿Cómo se personaliza el aprendizaje con IA?"
+        answer: "La IA personaliza el aprendizaje adaptando el contenido y ritmo a cada estudiante, analizando su rendimiento y preferencias para crear rutas dinámicas."
+      - question: "¿Qué tareas administrativas puede automatizar la IA en educación?"
+        answer: "La IA puede automatizar la calificación de exámenes, gestión de horarios y comunicación básica, liberando tiempo a los educadores."
+      - question: "¿Cómo ayuda la IA en la tutoría de estudiantes?"
+        answer: "La IA ofrece tutoría inteligente mediante chatbots y asistentes virtuales que brindan apoyo 24/7, responden preguntas y guían en conceptos difíciles."
+      - question: "¿Qué rol juega la IA en el análisis de datos educativos?"
+        answer: "La IA procesa grandes volúmenes de datos estudiantiles para identificar patrones, predecir riesgos de abandono y ofrecer intervenciones personalizadas."
+
+document_outline: "Visión general de las aplicaciones y el impacto de la Inteligencia Artificial en el sector educativo, cubriendo personalización, automatización, tutoría y análisis de datos."
+
+document:
+  repo: https://github.com/ricardohonores/KNOWLEDGE_IAEDUCACION.git # Reemplaza con la URL de tu repositorio de conocimiento
+  commit: d17dc47f19acf9037f915a05cab012d9738c6cb3 # Reemplaza con el SHA 
+  patterns:
+    - "*.md" # Patrón para los archivos Markdown en tu repositorio
