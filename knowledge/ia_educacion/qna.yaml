@@ -3,7 +3,7 @@
 # Habilidad de conocimiento (Knowledge Contribution) versión 3
 # Esta habilidad es "fundamentada" (grounded) en un documento externo.
 
-version: 3
+version: 2
 created_by: ricardohonores # Reemplaza con tu nombre de usuario de GitHub
 domain: Educacion
 
