@@ -3,7 +3,7 @@
 # Habilidad de conocimiento (Knowledge Contribution) versión 3
 # Esta habilidad es "fundamentada" (grounded) en un documento externo.
 
-version: 2
+version: 3
 created_by: ricardohonores # Reemplaza con tu nombre de usuario de GitHub
 domain: Educacion
 
@@ -31,6 +31,6 @@ seed_examples:
 document_outline: "Visión general de las aplicaciones y el impacto de la Inteligencia Artificial en el sector educativo, cubriendo personalización, automatización, tutoría y análisis de datos."
 
 document:
-  repo: https://github.com/ricardohonores/KNOWLEDGE_IAEDUCACION # Reemplaza con la URL de tu repositorio de conocimiento
+  repo: https://github.com/ricardohonores/KNOWLEDGE_IAEDUCACION  # Reemplaza con la URL de tu repositorio de conocimiento
   commit: 9b9fd1b8e73cd12037bfac7b8042877414aab0f2 # Reemplaza con el SHA que obtuviste en el paso anterior
   patterns:    - "*.md" # Patrón para los archivos Markdown en tu repositor
