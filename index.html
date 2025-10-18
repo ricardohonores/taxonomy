@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentu AI Partners - Transformación Digital con IA para Empresas de Alto Rendimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%); }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        #chatbot-btn { position: fixed; bottom: 30px; right: 30px; z-index: 1000; width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        #chatbot-btn:hover { transform: scale(1.1); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6); }
+        .stat-card { background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%); }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">Momentu AI Partners</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#soluciones" class="hover:text-blue-400 transition">Soluciones</a>
+                <a href="#industrias" class="hover:text-blue-400 transition">Industrias</a>
+                <a href="#proceso" class="hover:text-blue-400 transition">Proceso</a>
+                <a href="#contacto" class="px-6 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Agendar Consulta</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Transforme su Operación con<br/>
+                <span class="gradient-text">Inteligencia Artificial</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-200 mb-8 max-w-4xl mx-auto">
+                Reduzca costos operativos hasta 30%, elimine ineficiencias y escale su negocio con soluciones de IA diseñadas para tomadores de decisiones que buscan resultados medibles.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <a href="#contacto" class="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105">
+                    Agendar Diagnóstico Gratuito
+                </a>
+                <a href="#casos" class="px-8 py-4 bg-transparent border-2 border-blue-400 text-blue-400 rounded-lg text-lg font-semibold hover:bg-blue-400 hover:text-white transition">
+                    Ver Casos de Uso
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-16">
+                <div class="stat-card p-6 rounded-xl hover-scale">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">30%</div>
+                    <div class="text-sm text-blue-200">Reducción de Paros No Planificados</div>
+                </div>
+                <div class="stat-card p-6 rounded-xl hover-scale">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">40%</div>
+                    <div class="text-sm text-blue-200">Aceleración en Ciclos de Cobranza</div>
+                </div>
+                <div class="stat-card p-6 rounded-xl hover-scale">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">25%</div>
+                    <div class="text-sm text-blue-200">Reducción de No-Shows</div>
+                </div>
+                <div class="stat-card p-6 rounded-xl hover-scale">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">50%</div>
+                    <div class="text-sm text-blue-200">Menos Faltantes de Inventario</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="py-20 px-6 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">¿Su Empresa Está Perdiendo Dinero en Estas Áreas?</h2>
+            <p class="text-xl text-center text-gray-400 mb-16">Identificamos los "dolores ardientes" que impactan directamente su rentabilidad</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-8 rounded-xl border border-red-900/30 hover-scale">
+                    <div class="text-red-500 text-3xl mb-4">⚠️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Manufactura: Tiempo de Inactividad</h3>
+                    <p class="text-gray-300 mb-4">Una máquina clave detenida puede costarle cientos de miles de pesos por hora en producción perdida y penalizaciones por retrasos.</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✓ Paros no planificados frecuentes</li>
+                        <li>✓ Desperdicio de material por defectos</li>
+                        <li>✓ Presión por estándares internacionales</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-xl border border-red-900/30 hover-scale">
+                    <div class="text-red-500 text-3xl mb-4">⚖️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Fintech: Riesgo de Multas</h3>
+                    <p class="text-gray-300 mb-4">No cumplir con normativas de PLD o protección de datos puede resultar en sanciones que quiebran empresas.</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✓ KYC manual y lento (2 días vs 5 minutos)</li>
+                        <li>✓ Carga operativa enorme en compliance</li>
+                        <li>✓ Riesgo constante de fraudes</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-xl border border-red-900/30 hover-scale">
+                    <div class="text-red-500 text-3xl mb-4">🏥</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Salud: Fuga de Pacientes</h3>
+                    <p class="text-gray-300 mb-4">Cada no-show es una pérdida directa de miles de pesos y un espacio que no puede reasignarse.</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✓ Caos administrativo en agendamiento</li>
+                        <li>✓ Ciclo de cobranza infernal con seguros</li>
+                        <li>✓ Experiencia del paciente fragmentada</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-xl border border-red-900/30 hover-scale">
+                    <div class="text-red-500 text-3xl mb-4">📦</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Distribución: Capital Muerto</h3>
+                    <p class="text-gray-300 mb-4">Bodegas llenas de producto estancado mientras pierde ventas por faltantes de productos clave.</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✓ Inventario basado en "intuición"</li>
+                        <li>✓ Pérdida de ventas por stockouts</li>
+                        <li>✓ Márgenes ajustados por ineficiencia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="soluciones" class="py-20 px-6 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Soluciones High-Ticket con ROI Medible</h2>
+            <p class="text-xl text-center text-gray-400 mb-16">No vendemos software. Vendemos transformación y resultados garantizados.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">🏭</div>
+                    <h3 class="text-2xl font-bold mb-4">Mantenimiento Predictivo con IA</h3>
+                    <p class="text-gray-300 mb-6">Reduzca paros no planificados en 30% y defectos en 20% en 6 meses.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Manufactura</li>
+                        <li>• Automotriz</li>
+                        <li>• Nearshoring</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$15k - $30k USD</div>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-bold mb-4">Compliance Automatizado</h3>
+                    <p class="text-gray-300 mb-6">KYC de 2 días a 5 minutos. Reportes regulatorios automáticos.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Fintech</li>
+                        <li>• SOFOMES</li>
+                        <li>• Servicios Financieros</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$10k - $25k USD</div>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">🏥</div>
+                    <h3 class="text-2xl font-bold mb-4">Experiencia del Paciente 360°</h3>
+                    <p class="text-gray-300 mb-6">Reduzca no-shows 25%, automatice 80% comunicación, acelere cobranza 40%.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Clínicas privadas</li>
+                        <li>• Grupos hospitalarios</li>
+                        <li>• Especialidades médicas</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$12k - $28k USD</div>
+                </div>
+
+                <!-- Solution 4 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-4">Inteligencia de Inventarios</h3>
+                    <p class="text-gray-300 mb-6">Libere 20% del capital atrapado, reduzca faltantes 50%.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Mayoristas</li>
+                        <li>• Distribuidores</li>
+                        <li>• Retail</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$15k - $35k USD</div>
+                </div>
+
+                <!-- Solution 5 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">💎</div>
+                    <h3 class="text-2xl font-bold mb-4">Clienteling Inteligente</h3>
+                    <p class="text-gray-300 mb-6">Aumente LTV de clientes VIP en 20% con relacionamiento proactivo.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Marcas de lujo</li>
+                        <li>• Retail alta gama</li>
+                        <li>• Automotriz premium</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$18k - $40k USD</div>
+                </div>
+
+                <!-- Solution 6 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-blue-800/30 hover-scale">
+                    <div class="text-blue-400 text-4xl mb-4">🚚</div>
+                    <h3 class="text-2xl font-bold mb-4">Optimización Logística</h3>
+                    <p class="text-gray-300 mb-6">Reduzca costos operativos y mejore trazabilidad para estándares internacionales.</p>
+                    <div class="text-sm text-gray-400 mb-4">Ideal para:</div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6">
+                        <li>• Cadena de suministro</li>
+                        <li>• Logística</li>
+                        <li>• Exportación</li>
+                    </ul>
+                    <div class="text-blue-400 font-bold text-xl">$15k - $35k USD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="py-20 px-6 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Metodología Probada en 4 Fases</h2>
+            <p class="text-xl text-center text-gray-400 mb-16">De diagnóstico a resultados medibles en menos de 6 meses</p>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3">Diagnóstico</h3>
+                    <p class="text-gray-400">Análisis profundo de sus operaciones y puntos críticos de falla o ineficiencia.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3">Implementación</h3>
+                    <p class="text-gray-400">Despliegue de soluciones de IA integradas a sus sistemas existentes.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3">Optimización</h3>
+                    <p class="text-gray-400">Ajuste fino basado en datos reales para maximizar resultados.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-3">Soporte</h3>
+                    <p class="text-gray-400">Capacitación y monitoreo continuo para garantizar el ROI prometido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industrias" class="py-20 px-6 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Industrias que Transformamos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">🏭</div>
+                    <h3 class="text-xl font-bold mb-2">Manufactura</h3>
+                    <p class="text-gray-400">Nearshoring, automotriz, producción</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">💳</div>
+                    <h3 class="text-xl font-bold mb-2">Fintech</h3>
+                    <p class="text-gray-400">Servicios financieros, SOFOMES</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">🏥</div>
+                    <h3 class="text-xl font-bold mb-2">Salud</h3>
+                    <p class="text-gray-400">Clínicas, hospitales, especialidades</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">📦</div>
+                    <h3 class="text-xl font-bold mb-2">Distribución</h3>
+                    <p class="text-gray-400">Mayoristas, logística, retail</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-2">Lujo</h3>
+                    <p class="text-gray-400">Marcas premium, alta gama</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center hover-scale">
+                    <div class="text-5xl mb-4">🚚</div>
+                    <h3 class="text-xl font-bold mb-2">Logística</h3>
+                    <p class="text-gray-400">Cadena de suministro, transporte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Teaser -->
+    <section class="py-20 px-6 bg-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Cuánto Está Perdiendo Ahora Mismo?</h2>
+            <p class="text-xl text-gray-400 mb-8">Una línea de producción parada: $50,000 MXN/hora perdida</p>
+            <p class="text-xl text-gray-400 mb-8">Un no-show en cirugía: $15,000 MXN en ingresos perdidos</p>
+            <p class="text-xl text-gray-400 mb-8">Capital muerto en inventario: $2,000,000 MXN sin trabajar</p>
+            <div class="bg-blue-600/20 border border-blue-600 rounded-xl p-8 mt-12">
+                <p class="text-2xl font-bold mb-4">El costo de NO actuar es 10x mayor que la inversión</p>
+                <p class="text-gray-300">Nuestros clientes recuperan su inversión en menos de 6 meses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contacto" class="py-20 px-6 bg-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Agende su Diagnóstico Estratégico Gratuito</h2>
+            <p class="text-xl text-center text-gray-400 mb-12">Conversación de 45 minutos para identificar sus oportunidades de alto impacto</p>
+            
+            <form id="contactForm" class="bg-slate-800 p-8 rounded-xl border border-blue-800/30">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Nombre Completo *</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Juan Pérez García">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Cargo *</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Director de Operaciones">
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Email Corporativo *</label>
+                        <input type="email" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="juan.perez@empresa.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Teléfono *</label>
+                        <input type="tel" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="55 1234 5678">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold mb-2">Empresa *</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Nombre de su empresa">
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold mb-2">Industria *</label>
+                    <select required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none">
+                        <option value="">Seleccione su industria</option>
+                        <option value="manufactura">Manufactura / Nearshoring</option>
+                        <option value="fintech">Fintech / Servicios Financieros</option>
+                        <option value="salud">Salud / Clínicas Privadas</option>
+                        <option value="distribucion">Distribución / Mayoreo</option>
+                        <option value="lujo">Retail de Lujo / Alta Gama</option>
+                        <option value="logistica">Logística / Cadena de Suministro</option>
+                        <option value="otro">Otra</option>
+                    </select>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold mb-2">¿Cuál es su mayor desafío operacional? *</label>
+                    <textarea required rows="4" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Ej: Paros no planificados que nos cuestan $500k MXN mensuales en producción perdida..."></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold mb-2">Presupuesto estimado para soluciones *</label>
+                    <select required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:border-blue-500 focus:outline-none">
+                        <option value="">Seleccione un rango</option>
+                        <option value="10-20k">$10,000 - $20,000 USD</option>
+                        <option value="20-30k">$20,000 - $30,000 USD</option>
+                        <option value="30-50k">$30,000 - $50,000 USD</option>
+                        <option value="50k+">$50,000+ USD</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105">
+                    Solicitar Diagnóstico Gratuito
+                </button>
+
+                <p class="text-sm text-gray-400 text-center mt-4">
+                    Responderemos en menos de 24 horas hábiles
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-12 px-6 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-blue-400 text-3xl mb-3">📧</div>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <a href="mailto:ricardo.honores@gmail.com" class="text-gray-400 hover:text-blue-400">ricardo.honores@gmail.com</a>
+                </div>
+                <div>
+                    <div class="text-blue-400 text-3xl mb-3">📱</div>
+                    <h3 class="font-semibold mb-2">Teléfono</h3>
+                    <a href="tel:+525528512149" class="text-gray-400 hover:text-blue-400">+52 55 2851 2149</a>
+                </div>
+                <div>
+                    <div class="text-blue-400 text-3xl mb-3">📍</div>
+                    <h3 class="font-semibold mb-2">Ubicación</h3>
+                    <p class="text-gray-400">Ciudad de México, México</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-20 px-6 bg-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-blue-900/30 to-blue-800/30 border-2 border-blue-600 rounded-xl p-12 text-center">
+                <h2 class="text-3xl font-bold mb-6">Nuestra Garantía de Resultados</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    No cobramos por horas. No cobramos por "servicios de consultoría". Cobramos por resultados medibles y transformación real de su operación.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-slate-800/50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">✓</div>
+                        <h3 class="font-bold mb-2">ROI Calculable</h3>
+                        <p class="text-sm text-gray-400">Cada proyecto incluye métricas claras de éxito y objetivos medibles desde el día 1</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">✓</div>
+                        <h3 class="font-bold mb-2">Implementación Real</h3>
+                        <p class="text-sm text-gray-400">No entregamos reportes. Implementamos sistemas que funcionan y generan valor inmediato</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">✓</div>
+                        <h3 class="font-bold mb-2">Soporte Continuo</h3>
+                        <p class="text-sm text-gray-400">Mantenimiento y optimización hasta lograr los resultados prometidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now Section -->
+    <section class="py-20 px-6 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">¿Por Qué Actuar Ahora?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">El Nearshoring No Esperará</h3>
+                    <p class="text-gray-300 mb-4">Las empresas manufactureras que no se modernicen perderán contratos frente a competidores más eficientes. Los estándares internacionales son cada vez más exigentes.</p>
+                    <p class="text-gray-400 text-sm">Sus clientes en EE.UU. y Europa exigen niveles de eficiencia y trazabilidad que sistemas manuales no pueden ofrecer.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">La Competencia Ya Se Movió</h3>
+                    <p class="text-gray-300 mb-4">Mientras usted considera si invertir en IA, sus competidores ya están automatizando procesos, reduciendo costos y capturando más mercado.</p>
+                    <p class="text-gray-400 text-sm">Los primeros en adoptar estas tecnologías establecen ventajas competitivas difíciles de alcanzar.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Regulación Cada Vez Más Estricta</h3>
+                    <p class="text-gray-300 mb-4">Las multas por incumplimiento en Fintech, salud y otros sectores regulados están aumentando exponencialmente. La automatización del compliance no es opcional.</p>
+                    <p class="text-gray-400 text-sm">Una multa puede costar 10x más que implementar la solución correcta desde ahora.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Talento Cada Vez Más Caro</h3>
+                    <p class="text-gray-300 mb-4">El costo de equipos operativos manuales solo aumentará. La IA le permite hacer más con menos, liberando a su equipo para tareas de alto valor.</p>
+                    <p class="text-gray-400 text-sm">Automatizar ahora significa proteger sus márgenes del aumento inevitable de costos laborales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 bg-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Cuánto tiempo toma ver resultados?</h3>
+                    <p class="text-gray-400">Los primeros resultados son visibles en 30-45 días. El ROI completo prometido se alcanza típicamente en 4-6 meses, dependiendo de la complejidad de la operación.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Necesito cambiar todos mis sistemas actuales?</h3>
+                    <p class="text-gray-400">No. Nos especializamos en integrar soluciones de IA con su infraestructura existente. Trabajamos con sus sistemas actuales (ERPs, CRMs, etc.) para maximizar su inversión previa.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Qué pasa si no alcanzo los resultados prometidos?</h3>
+                    <p class="text-gray-400">Cada proyecto incluye KPIs claros acordados desde el inicio. Trabajamos hasta alcanzar esos objetivos. Nuestro éxito está directamente ligado al suyo.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Mi equipo necesita ser técnico para usar estas soluciones?</h3>
+                    <p class="text-gray-400">Absolutamente no. Diseñamos interfaces intuitivas y proporcionamos capacitación completa. Si su equipo puede usar WhatsApp o email, puede usar nuestras soluciones.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Cómo sé si mi empresa es candidata?</h3>
+                    <p class="text-gray-400">Si usted es un tomador de decisiones (CIO, Director de TI, Director de Planta, CFO) en una empresa que factura más de $5M USD anuales y tiene dolores operacionales claros que impactan la rentabilidad, definitivamente califica.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">¿Por qué no contratar a un desarrollador interno?</h3>
+                    <p class="text-gray-400">Un desarrollador cuesta $50k-$100k USD anuales + beneficios, y necesitará meses para entregar algo funcional. Nosotros entregamos sistemas probados en semanas, con garantía de resultados, y por una fracción del costo anual de un empleado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-6 gradient-bg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">¿Listo para Transformar su Operación?</h2>
+            <p class="text-xl text-blue-200 mb-8">
+                Cada día que pasa sin optimizar es dinero que deja sobre la mesa. Hablemos sobre sus desafíos específicos.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
+                <a href="#contacto" class="px-8 py-4 bg-white text-blue-900 rounded-lg text-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105">
+                    Agendar Diagnóstico Gratuito
+                </a>
+                <a href="tel:+525528512149" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-900 transition">
+                    Llamar Ahora
+                </a>
+            </div>
+            <p class="text-blue-200 text-sm">
+                ⚡ Diagnóstico estratégico de 45 minutos • Sin compromiso • Respuesta en 24 horas
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-slate-950">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Momentu AI Partners</h3>
+                    <p class="text-gray-400 text-sm">Transformación digital con IA para empresas de alto rendimiento.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soluciones</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400">Mantenimiento Predictivo</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Compliance Automatizado</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Experiencia del Paciente</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Inteligencia de Inventarios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Industrias</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400">Manufactura</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Fintech</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Salud</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Distribución</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>ricardo.honores@gmail.com</li>
+                        <li>+52 55 2851 2149</li>
+                        <li>Ciudad de México, MX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Momentu AI Partners. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-btn" title="Chat con nosotros">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+        </svg>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por su interés! Nos pondremos en contacto con usted en menos de 24 horas.\n\nMientras tanto, puede llamarnos directamente al +52 55 2851 2149');
+            this.reset();
+        });
+
+        // Chatbot button
+        document.getElementById('chatbot-btn').addEventListener('click', function() {
+            alert('Chat en vivo próximamente.\n\nPor ahora, puede contactarnos:\n📧 ricardo.honores@gmail.com\n📱 +52 55 2851 2149');
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
